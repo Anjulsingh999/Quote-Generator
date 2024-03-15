@@ -9,7 +9,7 @@ async function getquote(url)
     // console.log(data);
 
     quote.innerHTML="\""+data.content+"\"";
-    author.innerHTML=data.author
+    author.innerHTML="\""+data.author+"\"";
 
 }
 

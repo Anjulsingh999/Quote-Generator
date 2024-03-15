@@ -92,6 +92,7 @@ body{
 {
     
     height: 18px;
+    pointer-events: none;
 }
 
 .btns button{
@@ -139,6 +140,11 @@ body{
     {
         width: 500px;
     }
+
+    .new_quote_btn button:hover
+{
+    background-color: black;
+}
 }
 
 @media (max-width:520px) {
@@ -146,6 +152,10 @@ body{
     .container
     {
         width: 420px;
+    }
+    .new_quote_btn button:hover
+    {
+        background-color: black;
     }
 }
 
@@ -158,6 +168,10 @@ body{
     .top_heading
 {
     font-size: 2.2rem;
+}
+.new_quote_btn button:hover
+{
+    background-color: black;
 }
 
 #quote_area
@@ -177,7 +191,10 @@ body{
 {
     gap: 1.1rem;
 }
-
+.new_quote_btn button:hover
+{
+    background-color: black;
+}
 
 .btns button{
     height: 40px;
