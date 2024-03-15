@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family:sans-serif; */
+    user-select: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(146, 197, 241);
+}
+
+.container{
+    width: 600px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.238);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2.4rem;
+}
+
+.top_heading
+{
+    font-size: 2.5rem;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.top_heading_line
+{
+    height: 4px;
+    width: 100px;
+    background-color: rgb(43, 0, 255);
+}
+
+#quote_area
+{
+    font-size: 1.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.quote_writter
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.6rem;
+    
+}
+
+
+.quote_writter_line
+{
+    height: 0.8px ;
+    width: 20px;
+    background-color: black;
+}
+/* .quote blockquote::before,.quote blockquote::after
+{
+    content: '"';
+} */
+
+#quote_writter
+{
+    font-size: 0.8rem;
+    text-align: right;
+    width: 100%;
+}
+.btns
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+.btn img
+{
+    
+    height: 18px;
+}
+
+.btns button{
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 0;
+    font-size: 1rem;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.4rem;
+}
+
+.new_quote_btn button
+{
+    background-color: black;
+    color: white;
+}
+
+.new_quote_btn button:hover
+{
+    background-color: rgba(0, 0, 0, 0.812);
+}
+
+.twitter_share_btn  button 
+{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid black;
+
+}
+
+.twitter_share_btn  button:hover
+{
+    background-color: rgba(249, 244, 244, 0.896);
+}
+
+@media (max-width:620px) {
+
+    .container
+    {
+        width: 500px;
+    }
+}
+
+@media (max-width:520px) {
+
+    .container
+    {
+        width: 420px;
+    }
+}
+
+@media (max-width:430px) {
+
+    .container
+    {
+        width: 350px;
+    }
+    .top_heading
+{
+    font-size: 2.2rem;
+}
+
+#quote_area
+{
+    font-size: 1.5rem;
+}
+}
+
+@media (max-width:370px) {
+
+    .container
+    {
+        width: 300px;
+    }
+
+    .btns
+{
+    gap: 1.1rem;
+}
+
+
+.btns button{
+    height: 40px;
+    width: 110px;
+    font-size: 0.9rem;
+}
+
+.btn img
+{
+    
+    height: 16px;
+}
+
+.top_heading
+{
+    font-size: 1.8rem;
+}
+
+#quote_area
+{
+    font-size: 1.4rem;
+}
+}
